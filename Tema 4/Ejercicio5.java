@@ -16,7 +16,6 @@ public class Ejercicio5 {
 			System.out.print("0 = 0 Infinitas soluciones");
 		}else if (a == 0){
 			System.out.print("No es posible");
-
 		}
 	}
 }
