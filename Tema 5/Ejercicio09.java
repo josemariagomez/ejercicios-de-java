@@ -7,7 +7,7 @@ public class Ejercicio09 {
 		System.out.print("Introduzca un número: ");
 		num = Integer.parseInt(System.console().readLine());
 		x = num;
-		while(x > 10) {
+		while(x >= 10) {
 			x /= 10;
 			cifras++;
 		}
