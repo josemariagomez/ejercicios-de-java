@@ -1,4 +1,4 @@
-package tema.pkg6;
+//package tema.pkg6;
 
 /**
  *
