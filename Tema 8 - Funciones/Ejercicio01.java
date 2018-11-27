@@ -76,4 +76,63 @@ public class Ejercicio01 {
     return (volteado % 10);
   }
   
+  //8
+  public static int posicionDeDigito(int num, int cifra) {
+    int posicion = 0;
+    int volteado = voltea(num);
+    int aux;
+    do {
+			aux = volteado / 10;
+      volteado /= 10;
+			posicion++;
+		}while((aux != cifra) && (volteado > 0));
+    if (aux == cifra) {
+      return posicion;
+    }else{
+      return -1;
+    }
+  }
+  
+  //9
+  public static int quitaPorDetras(int num, int pos) {
+    for (int i = 0; i < pos; i++) {
+      num /= 10;
+    }
+    return num;
+  }
+  
+  //10
+  public static int quitaPorDelante(int num, int pos) {
+    int volteado = voltea(num);
+    for (int i = 0; i < pos; i++) {
+      volteado /= 10;
+    }
+    return volteado;
+  }
+  
+  //11
+  public static int pegaPorDetras(int num, int dig) {
+    return (num * 10 + dig);
+  }
+  
+  //12
+  public static int pegaPorDelante(int num, int dig) {
+    int volteado = voltea(num);
+    volteado = pegaPorDetras(volteado, dig);
+    return voltea(volteado);
+  }
+  
+  //13
+  public static int trozoDeNumero(int num, int dig) {
+    int volteado = voltea(num);
+    volteado = pegaPorDetras(volteado, dig);
+    return voltea(volteado);
+  }
+    
+    //14
+  public static int juntaNumeros(int num1, int num2) {
+    int cifras = digitos(num2);
+    int resultado = ((num1 * 10 * cifras) + num2);
+    return resultado;
+  }
 }
