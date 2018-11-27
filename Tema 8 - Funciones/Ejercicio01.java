@@ -1,4 +1,4 @@
-package tema.pkg8.funciones;
+package tema.pkg8;
 
 /**
  *
@@ -11,10 +11,7 @@ public class Ejercicio01 {
   }
   //1
   public static boolean esCapicua(int n) {
-    if (n == voltea(n)){
-        return true;
-    }
-    return false;
+    return n == voltea(n);
   }
   //2
   public static boolean esPrimo(int n) {
@@ -28,15 +25,10 @@ public class Ejercicio01 {
   
   //3
   public static int siguientePrimo(int n) {
-    int i = (n + 1);
-    int siguiente;
     do {
-      if (esPrimo(i) == true) {
-        siguiente = i;
-        return siguiente;
-      }
-      i++;
-    }while(1 > 0);
+      n++;
+    }while(esPrimo(n) != true);
+    return n;
   }
   
   //4
@@ -123,16 +115,15 @@ public class Ejercicio01 {
   }
   
   //13
-  public static int trozoDeNumero(int num, int dig) {
-    int volteado = voltea(num);
-    volteado = pegaPorDetras(volteado, dig);
-    return voltea(volteado);
+  public static int trozoDeNumero(int num, int pos1, int pos2) {
+    int longitud = digitos(num);
+    num = quitaPorDelante(num, pos1);
+    num = quitaPorDetras(num, pos2);
+    return num;
   }
     
     //14
   public static int juntaNumeros(int num1, int num2) {
-    int cifras = digitos(num2);
-    int resultado = ((num1 * 10 * cifras) + num2);
-    return resultado;
+    return (int) ((num1 * potencia(10, digitos(num2))) + num2);
   }
 }

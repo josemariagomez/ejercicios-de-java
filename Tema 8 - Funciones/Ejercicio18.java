@@ -5,19 +5,17 @@
  */
 package tema.pkg8;
 
-
 /**
  *
  * @author jose_
  */
-public class Ejercicio15 {
-  
+public class Ejercicio18 {
+
+  /**
+   * @param args the command line arguments
+   */
   public static void main(String[] args) {
-    for (int i = 0; i < 1000; i++) {
-      if (Ejercicio01.esPrimo(i) == true) {
-        System.out.print(i + " ");
-      }
-    }
+    // TODO code application logic here
   }
   
 }
