@@ -26,13 +26,12 @@ public class Ejercicio06 {
     }while(!existe);
     
     
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3 && !acceso; i++) {
       System.out.print("Password: ");
       String pass = s.nextLine();
     
       if (pass.equals(usuarios.get(user))) {
         System.out.println("\033[32mHas accedido a la zona restringida");
-        i = 3;
         acceso = true;
       }else {
         System.out.println("\033[30mContraseña incorrecta. Intento " + (i + 1) + " de 3.");
