@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Configurador de relojes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Configurador de relojes</h1>
+            <form action="relojListo.jsp">
+                Selecciona el color de la esfera<br>
+                <select name="color">
+                    <option value="negro">Negro</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                </select>
+                <br>
+                Selecciona el material de la correa<br>
+                <select name="correa">
+                    <option value="acero">Acero</option>
+                    <option value="oro">Oro</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Configurar">
+            </form>
+        </div>
+    </body>
+</html>
