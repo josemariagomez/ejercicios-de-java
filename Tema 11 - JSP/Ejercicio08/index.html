@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tablas de multiplicar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Tablas de multiplicar</h1>
+            <form action="tabla.jsp">
+                <div class="form-group">
+                    <label for="numero">Elija el número del que quiera mostrar su tabla.</label>
+                    <input 
+                        type="number" 
+                        min="0"   
+                        class="form-control" 
+                        id="numero"
+                        placeholder="Introduce el numero"
+                        name ="numero"><br>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
